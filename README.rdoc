@@ -1,3 +1,9 @@
+= IMPORTANT NOTE
+
+This project was forked from https://github.com/rails/rails_upgrade as that repository is unmaintained.
+A few pull requests from that main repository were applied.
+For our repository, it should be deleted once dawanda_main is using Rails 3 (see https://github.com/dawanda/dawanda_main/pull/1291).
+
 = rails-upgrade
 
 A simple battery of scripts for upgrading Rails app/checking them for required updates.  This application should work on Rails 2.x and 3.0, with a focus on upgrading to 3.0.
@@ -7,18 +13,18 @@ A simple battery of scripts for upgrading Rails app/checking them for required u
 You need to install this plugin first:
 
     script/plugin install git://github.com/rails/rails_upgrade.git
-    
+
 Then you can run its rake tasks to check your application:
 
     # Check your app for required upgrades
     rake rails:upgrade:check
-    
+
     # Backup your likely modified files that might be overwritten by the generator
     rake rails:upgrade:backup
-    
+
     # Generate a new route file
     rake rails:upgrade:routes
-    
+
     # Generate a Gemfile from your config.gem directives
     rake rails:upgrade:gems
 
